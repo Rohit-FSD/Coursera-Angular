@@ -36,6 +36,7 @@ import { LeaderService } from './services/leader.service';
 import { baseURL } from './shared/baseurl';
 
 import { AppRoutingModule } from './app-routing/app-routing.module';
+import { ProcessHTTPMsgService } from './services/process-httpmsg.service';
 
 
 
@@ -80,6 +81,7 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
   providers: [DishService,
             PromotionService,
             LeaderService,
+            ProcessHTTPMsgService,
             {provide: 'BaseURL', useValue: baseURL}],
   bootstrap: [AppComponent]
 })
